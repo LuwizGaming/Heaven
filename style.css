@@ -128,3 +128,23 @@ body {
 .nav-right input:focus {
   border-color: #999;
 }
+
+.nav-center a {
+  position: relative;
+}
+
+.nav-center a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #3db4f2;
+  transition: 0.2s ease;
+  transform: translateX(-50%);
+}
+
+.nav-center a:hover::after {
+  width: 70%;
+}
