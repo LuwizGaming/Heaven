@@ -9,16 +9,6 @@ body {
   color: #222;
 }
 
-/* top bar */
-.topbar {
-  padding: 20px;
-  text-align: center;
-  background: white;
-  border-bottom: 1px solid #eaeaea;
-  font-weight: bold;
-  font-size: 18px;
-}
-
 /* container */
 .container {
   max-width: 1200px;
@@ -27,7 +17,7 @@ body {
 }
 
 /* =========================
-   GRID (AniList-style core)
+   GRID (AniList-style)
    ========================= */
 
 .grid {
@@ -54,14 +44,12 @@ body {
   box-shadow: 0 10px 20px rgba(0,0,0,0.12);
 }
 
-/* image */
 .card img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
-/* title */
 .card .title {
   padding: 8px;
   font-size: 14px;
@@ -69,39 +57,54 @@ body {
 }
 
 /* =========================
-   NAVBAR (AniList STYLE)
+   NAVBAR (CLEAN ANILIST STYLE FIXED)
    ========================= */
 
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
+  width: 100%;
   padding: 14px 24px;
 
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
 
   border-bottom: 1px solid #eaeaea;
+  box-sizing: border-box;
 }
 
 /* LEFT */
 .nav-left {
+  flex: 1;
   font-weight: 600;
   font-size: 16px;
 }
 
-/* CENTER LINKS */
+/* CENTER */
 .nav-center {
+  flex: 2;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 18px;
 }
 
+/* RIGHT */
+.nav-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* LINKS */
 .nav-center a {
+  position: relative;
+
   text-decoration: none;
   color: #333;
   font-size: 14px;
@@ -116,23 +119,7 @@ body {
   background: #f0f0f0;
 }
 
-/* RIGHT SEARCH */
-.nav-right input {
-  padding: 6px 10px;
-  border-radius: 8px;
-
-  border: 1px solid #ddd;
-  outline: none;
-}
-
-.nav-right input:focus {
-  border-color: #999;
-}
-
-.nav-center a {
-  position: relative;
-}
-
+/* underline animation */
 .nav-center a::after {
   content: "";
   position: absolute;
@@ -147,4 +134,17 @@ body {
 
 .nav-center a:hover::after {
   width: 70%;
+}
+
+/* SEARCH */
+.nav-right input {
+  padding: 6px 10px;
+  border-radius: 8px;
+
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.nav-right input:focus {
+  border-color: #999;
 }
