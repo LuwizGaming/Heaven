@@ -148,3 +148,57 @@ body {
 .nav-right input:focus {
   border-color: #999;
 }
+
+/* =========================
+   PROFILE PAGE (ANILIST STYLE BIO)
+   ========================= */
+
+.profile {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* header layout */
+.profile-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  padding: 30px 0;
+}
+
+/* profile image */
+.profile-header img {
+  width: 140px;
+  height: 140px;
+  border-radius: 12px;
+  object-fit: cover;
+
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* text */
+.profile-info h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.subtitle {
+  margin-top: 5px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* biography section */
+.profile-body {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  line-height: 1.6;
+}
+
+.profile-body h2 {
+  margin-top: 0;
+}
