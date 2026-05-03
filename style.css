@@ -1,0 +1,69 @@
+/* =========================
+   BASE
+   ========================= */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #222;
+}
+
+/* top bar */
+.topbar {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  border-bottom: 1px solid #eaeaea;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* =========================
+   GRID (AniList-style core)
+   ========================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+/* =========================
+   CARD
+   ========================= */
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+/* image */
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* title */
+.card .title {
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+}
