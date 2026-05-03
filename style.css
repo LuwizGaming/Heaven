@@ -67,3 +67,64 @@ body {
   font-size: 14px;
   text-align: center;
 }
+
+/* =========================
+   NAVBAR (AniList STYLE)
+   ========================= */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 24px;
+
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* LEFT */
+.nav-left {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* CENTER LINKS */
+.nav-center {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-center a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+
+  padding: 6px 10px;
+  border-radius: 6px;
+
+  transition: 0.2s ease;
+}
+
+.nav-center a:hover {
+  background: #f0f0f0;
+}
+
+/* RIGHT SEARCH */
+.nav-right input {
+  padding: 6px 10px;
+  border-radius: 8px;
+
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.nav-right input:focus {
+  border-color: #999;
+}
